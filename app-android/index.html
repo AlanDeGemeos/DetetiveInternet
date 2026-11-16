@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detetive de Internet</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="cabecalho">
+            <div class="logo">🔎</div>
+            <h1>DETETIVE DE INTERNET</h1>
+            <p>Diagnóstico de conexão para técnicos de campo</p>
+        </header>
+
+        <section class="painel">
+            <h2>Painel de diagnóstico</h2>
+
+            <p class="descricao">
+                Execute uma análise da conectividade HTTP,
+                estabilidade e variação dos tempos de resposta.
+            </p>
+
+            <div class="status">
+                <span id="indicador" class="indicador"></span>
+                <span id="estado">Aguardando diagnóstico</span>
+            </div>
+
+            <div class="progresso">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <p id="progresso-texto">Pronto para iniciar</p>
+
+            <button id="iniciar-teste">
+                Iniciar diagnóstico
+            </button>
+
+            <button id="baixar-relatorio" class="secundario" disabled>
+                Baixar relatório
+            </button>
+        </section>
+
+        <section class="painel">
+            <h2>Resultados da investigação</h2>
+
+            <div id="resultados" aria-live="polite">
+                Nenhum teste realizado.
+            </div>
+        </section>
+
+        <footer>
+            <p>Detetive de Internet | Versão Web 1.0</p>
+            <p>Ferramenta auxiliar de diagnóstico</p>
+        </footer>
+
+    </main>
+</body>
+
+</html>
